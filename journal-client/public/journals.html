@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet">
+   
+   
+    
+    <title>Journal</title>
+</head>
+
+<body class="bg-gray-100 relative">
+   
+
+<nav class="bg-white">
+    <div class="">
+        <div class="flex justify-between h-16 px-10 shadow items-center">
+            <div class="flex items-center space-x-1 cursor-pointer">
+                <img class="flex h-12" src="https://img.icons8.com/pastel-glyph/64/000000/note.png" />
+                <h1 class="text-4xl lg:text-4xl font-bold">Journal</h1>
+                </a>
+            </div>
+            <div class="flex space-x-4 items-center">
+
+                <a href="http://localhost:5000/profile.html?" class="hover:text-gray-600 text-gray-900">Add Journal</a>
+                <a href="http://localhost:5000/journals" class="hover:text-gray-600 text-gray-400">My Journals</a>
+                <button id="logout">Logout</button>
+                <img class="flex h-12 rounded-full" id="user-image" />
+
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 mb-3">
+            <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()"
+                placeholder="Search for names..">
+        </div>
+    </div>
+    <div class="row" id="myItems">
+        <div class="col-sm-12 mb-3" id="divContainer">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#">Card One</a></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some text.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#">Card Two</a></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some text.</p>
+                </div>
+            </div>
+
+           
+
+            
+        </div>
+    </div>
+</div>
+    <script>
+    </script>
+</body>
+   
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"> </script>
+                <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+                <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+                <script src="js/journals.js"></script>
+
+</body>
+
+</html>

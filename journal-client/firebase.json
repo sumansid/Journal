@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+     "redirects": [
+      {
+        "source": "/profile",
+        "destination": "./profile.html"
+      },
+    {
+        "source": "/home",
+        "destination": "./index.html"
+      },
+    {
+        "source": "/journals",
+        "destination": "./journals.html"
+      }]
+  }
+}
